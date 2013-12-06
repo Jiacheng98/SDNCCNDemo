@@ -1,0 +1,1 @@
+ccnpingserver ccnx:/nam

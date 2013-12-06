@@ -1,0 +1,1 @@
+ccnping ccnx:/nam

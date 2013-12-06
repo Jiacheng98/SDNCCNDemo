@@ -1,0 +1,1 @@
+curl http://localhost:8080/wm/staticflowentrypusher/clear/all/json
