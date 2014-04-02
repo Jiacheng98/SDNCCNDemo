@@ -12,7 +12,7 @@ Start the Wrapper on the H1, H2
 
 Start the Server for content name ccnx:/nam on H4
 
-Add a CCN forwarding entry to H3, to let it forward everything to Switch 1
+Add a CCN forwarding entry to H3, to let it forward everything to Switch 1: ccndc add / udp 10.0.0.1 9001
 
 Start the client on H3 to request the content ccnx:/nam
 
@@ -27,7 +27,7 @@ If one in two Wrapper is stopped, the ccnx request fails.
 Start another server for ccnx:/nam1 on H4 and request that content from H3.
 
  
-Another entries is used for this content name.
+Another entry is used for this content name.
 
 
 

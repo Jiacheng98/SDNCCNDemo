@@ -17,6 +17,9 @@ curl -d '{"switch": "00:00:00:00:00:00:00:01", "name":"flow-mod-1-3", "cookie":"
 
 curl -d '{"switch": "00:00:00:00:00:00:00:01", "name":"flow-mod-1-4", "cookie":"0", "priority":"32768", "ingress-port":"1","active":"true", "ether-type":"0x0800", "protocol":"17","dst-ip":"18.12.155.124","actions":"output=2"}' http://localhost:8080/wm/staticflowentrypusher/json;
 
+#WARNING: You will need to set new IP address if you use new name for ping!!! The ip address is calculated by hashed function. 
+#The best way is to let the controller install a rule for each new name. 
+
 
 curl -d '{"switch": "00:00:00:00:00:00:00:02", "name":"flow-mod-2-3", "cookie":"0", "priority":"32768", "ingress-port":"1","active":"true", "ether-type":"0x0800", "protocol":"17","dst-ip":"193.147.136.11","actions":"set-dst-mac=00:00:00:00:00:04,set-dst-ip=10.0.0.4,set-dst-port=9004,output=3"}' http://localhost:8080/wm/staticflowentrypusher/json;
 

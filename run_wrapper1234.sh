@@ -1,7 +1,6 @@
 #Script to execute Wrapper.
-
-ccndc add / udp 127.0.0.1 8888;#Add forwarding entry from CCNx to Wrapper.
-#echo "Run Server that listens on port 1234"
-#python Server.py 1234 & #Wrapper uses raw socket, cannot bind to a transportation port, need a seperate client to answer from port 1234.
-cd ~/GIT/Wrapper/Debug;
+#Add forwarding entry from CCNx to Wrapper.
+ccndc add / udp 127.0.0.1 8888;
+#Browse to Wrapper folder
+cd ../Wrapper/Debug;
 ./Wrapper -i h$1-eth0 -p 900$1

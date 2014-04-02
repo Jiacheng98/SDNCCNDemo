@@ -8,13 +8,13 @@ The network for this demo described in the figure: 2 OpenFlow switches, 4 hosts 
 Start the network using a Mininet script. In that script, CCNd on H1, H2, H3, H4 are also started and the flow table entries are populated on the OpenFlow switch.
 
 
-Start the Wrapper on the H1, H2
+Start the Wrapper on the H1, H2: sh run_wrapper1234.sh $(host)
 
-Start the Server for content name ccnx:/nam on H4
+Start the Server for content name ccnx:/nam on H4: ccnpingserver ccnx:/nam
 
-Add a CCN forwarding entry to H3, to let it forward everything to Switch 1
+Add a CCN forwarding entry to H3, to let it forward everything to Switch 1: ccndc add / udp 10.0.0.1 9001
 
-Start the client on H3 to request the content ccnx:/nam
+Start the client on H3 to request the content ccnx:/nam: ccnping ccnx:/nam
 
 
 This is the entry for the interest request ccnx:/nam. The content name is hashed into the IP address destination, and this interest is forwarded towards the server.
