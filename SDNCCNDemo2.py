@@ -298,7 +298,7 @@ if __name__ == '__main__':
 #     pusher.pushFlowToSwitch(1,1,"193.147.136.11",2)
 #     pusher.pushFlowToSwitch(1,2,"18.12.155.124",3)
     #pusher.pushFlowToSwitch1(1,2,1)
-    start_ccnx()
+    #start_ccnx()
 #    preinsert_path()
 #    net.hosts[2].cmd('~/Downloads/workspace/Wrapper/Debug/wrapper ');
 #    net.hosts[2].cmd('ccndc add / udp 127.0.0.1 8888');
